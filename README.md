@@ -4,7 +4,7 @@ El link al repositorio es el siguiente: https://github.com/Germiprogramer/PRODUC
 
 La tarea productores y consumidores consiste en crear unos elementos que produzcan un recurso, mientras haya otros que lo consuman. Para realizar el trabajo, he decidido basarme en la tarea del campus, siendo el producto un bollito. 
 
-Partimos de un numero de bollos de pan base, que nuestro querido panadero ha horneado antes de el comienzo de la jornada laboral. Para ello, creamos una función para añadir bollos de pan a una queue, que será donde se almacenarán. A partir de ahí, los productores añadirán elementos a la queue, y los consumidores los consumirán. En nuestro ejemplo de aplicación hemos implementado un productor y dos consumidores. Los productores los hemos creado con la clase Thread, los consumidores con Timer, para que "lleguen a la tienda" en momentos distintos.
+Partimos de un numero de bollos de pan base, que nuestro querido panadero ha horneado antes de el comienzo de la jornada laboral. Para ello, creamos una función para añadir bollos de pan a una queue, que será donde se almacenarán. A partir de ahí, los productores añadirán elementos a la queue, y los consumidores los consumirán. En nuestro ejemplo de aplicación hemos implementado un productor y dos consumidores. Los productores los hemos creado con la clase Thread, los consumidores con Timer, para que "lleguen a la tienda" en momentos distintos. Además, se ha añadido tiempo de espera a las funciones productor y consumidor, para que no se ejecute todo de seguido.
 
 Para asegurarnos que cuando hay un único bollo los consumidores no lo consumen a la vez, se ha creado un semaforo cuyo contador se pondrá negativo cuando se trate de consumir mas bollos de los que hay, impidiendo dicha situación.
 
