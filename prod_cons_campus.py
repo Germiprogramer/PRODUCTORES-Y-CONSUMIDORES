@@ -44,7 +44,7 @@ def producer(name):
 
         print("Hay",q.qsize(),"bollos en el mostrador" + "\n")
 
-        time.sleep(5)
+        time.sleep(4)
 
 def customer(name):
 
@@ -64,7 +64,7 @@ def customer(name):
 
         # Envía una señal después de comer
 
-        time.sleep(8)
+        time.sleep(6)
 
 
 
